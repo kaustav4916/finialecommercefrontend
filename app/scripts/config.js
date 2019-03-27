@@ -17,6 +17,20 @@ function config($stateProvider, $urlRouterProvider) {
             controller: 'dashboardCtrl',
             title: 'Dashboard'
         })
+        .state('dashboardorders', {
+            name: 'dashboardorders',
+            url: "/orders",
+            templateUrl: "views/dashboardorders/order.html",
+            controller: 'OrderCtrl',
+            title: 'Orders'
+        })
+        .state('checkoutpage',{
+            name: 'checkoutpage',
+            url : "/checkout",
+            templateUrl: "views/checkout/checkout.html",
+            controller: 'checkoutCtrl',
+            title: 'checkout'
+        })
         .state('homepage', {
             name: 'homepage',
             url: "/",
@@ -24,6 +38,8 @@ function config($stateProvider, $urlRouterProvider) {
             controller: 'homeCtrl',
             title: 'Home'
         })
+        
+
     $urlRouterProvider.otherwise("/");
 }
 angular

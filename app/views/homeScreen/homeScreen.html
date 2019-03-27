@@ -1,64 +1,84 @@
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="google-signin-client_id" content="232982572243-9ln09nu5ns6tqtscdqvdmto0ht9a1nrk.apps.googleusercontent.com">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <div id="page">
 	<nav class="colorlib-nav" role="navigation">
 		<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html">Store</a></div>
-						</div>
-						<div class="col-xs-10 text-right menu-1">
-							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="shop.html">Shop</a>
-									<ul class="dropdown">
-										<li><a href="product-detail.html">Product Detail</a></li>
-										<li><a href="cart.html">Shipping Cart</a></li>
-										<li><a href="checkout.html">Checkout</a></li>
-										<li><a href="order-complete.html">Order Complete</a></li>
-										<li><a href="add-to-wishlist.html">Wishlist</a></li>
-									</ul>
-								</li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
-							</ul>
-						</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="colorlib-logo"><a href="#">Ecommmerce</a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="#">Home</a></li>
+							<li class="has-dropdown">
+								<a href="#/checkout">Shop</a>
+								<ul class="dropdown">
+									<li>
+										<a href="#">Product Detail</a>
+									</li>
+									<li>
+										<a href="#">Shipping Cart</a>
+									</li>
+									<li>
+										<a href="#">Checkout</a>
+									</li>
+									<li>
+										<a href="#">Order Complete</a>
+									</li>
+									<li>
+										<a href="#">Wishlist</a>
+									</li>										
+								</ul>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#cart"><i class="icon-shopping-cart"></i> Cart [0]</a>
+							</li>
+							<li>
+								<a href=""  data-toggle="modal" data-target="#loginModal" id="btnTest"><i class="glyphicon glyphicon-log-in"></i> Login</a>
+							</li>
+							<li>
+								<img  ng-src="https://lh5.googleusercontent.com/-E0m5BeBPANo/AAAAAAAAAAI/AAAAAAAAK8g/S_Su6scmWZc/s96-c/photo.jpg" alt="user" class="rounded" width="55"/>
+							</li>
+						</ul>
 					</div>
 				</div>
+			</div>
 		</div>
 	</nav>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel"  style="min-height: 50%" >
-		  <!-- Indicators -->
+		<!-- Indicators -->
 		<ol class="carousel-indicators">
 		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		    <li data-target="#myCarousel" data-slide-to="1"></li>
 		    <li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
-
-		  <!-- Wrapper for slides -->
+		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
-		    <div class="item active">		    	
-		      <img src="img/rsz_1.jpg" alt="Los Angeles" class="img-fluid" alt="Responsive image">
-		    </div>
-
-		    <div class="item">
-		      <img src="img/banner_2_background.jpg" alt="Chicago" class="img-fluid" alt="Responsive image">
-		    </div>
-
-		    <div class="item">
-		      <img src="img/banner_2_background.jpg" alt="New York" class="img-fluid" alt="Responsive image">
-		    </div>
+		    <div class="item active">
+			    <img src="img/shop_background.jpg" alt="Los Angeles" class="img-fluid" alt="Responsive image">
+			</div>
+			<div class="item">
+			    <img src="img/shop_background.jpg" alt="Chicago" class="img-fluid" alt="Responsive image">
+			</div>
+			<div class="item">
+			    <img src="img/shop_background.jpg" alt="New York" class="img-fluid" alt="Responsive image">
+			</div>
 		</div>
-
-		  <!-- Left and right controls -->
+		<!-- Left and right controls -->
 		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 		    <span class="glyphicon glyphicon-chevron-left"></span>
-			    
 		</a>
 		<a class="right carousel-control" href="#myCarousel" data-slide="next">
 		    <span class="glyphicon glyphicon-chevron-right"></span>
@@ -67,37 +87,256 @@
 	</div>
 	<div class="flex-container " style="background-color: #3B3178;">
 		<div class="container">
-				<div class="row">
-					<div class="person">
+			<div class="row">
+				<div class="person">
 						<div>
 							<img src="img/best_1.png">
 							<h2>RS1200</h2>
 						</div>
-					</div>
-					<div class="person">
-			           <div>
+				</div>
+				<div class="person">
+				        <div>
 							<img src="img/best_1.png">
 							<h2>RS1500</h2>
 						</div>
-					</div>
-					<div class="person">
-					    <div>
-							<img src="img/best_1.png">
-							<h2>RS13000</h2>
-						</div>
-					</div>
-					<div class="person">
-					   <div>
-							<img src="img/best_1.png">
-							<h2>RS13000</h2>
-						</div>
-					</div>
-					<div class="person">
-					    <div>
-							<img src="img/best_1.png">
-							<h2>RS13000</h2>
-						</div>
-					</div>															
 				</div>
+				<div class="person">
+						<div>
+							<img src="img/best_1.png">
+							<h2>RS13000</h2>
+						</div>
+				</div>
+				<div class="person">
+						<div>
+							<img src="img/best_1.png">
+							<h2>RS13000</h2>
+						</div>
+				</div>
+				<div class="person">
+						<div>
+							<img src="img/best_1.png">
+							<h2>RS13000</h2>
+						</div>
+				</div>
+			</div>
 		</div>
 	</div>
+</div>
+<!-- login Modal -->
+<div id="loginModal" class="modal fade" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog">
+		    <!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Login to Your Account</h4><br>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="loginmodal-container">
+				<form>
+					    <input type="text" name="user"  ng-model="admin_email" placeholder="admin_email">
+					    <input type="password" name="pass"  ng-model="admin_password"  placeholder="admin_password">
+					    <input type="submit" name="login" class="login loginmodal-submit" ng-click="onSelect(userName, password)">
+				</form>
+				<div class="col-md-12">
+						<h4>Login Using Facebook and google</h4>
+						<div class="col-md-6" >
+							 <div class="g-signin2" data-onsuccess="onSignIn" ></div>
+						</div>
+						<div class="col-md-6">
+							<fb:login-button  scope="public_profile,email"  onlogin="checkLoginState();">Facebook</fb:login-button>
+						</div>
+				</div>					
+		    </div>
+			<div class="modal-footer">
+			    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!---------------ProductCatalog in ng-repeat------------------>
+<div class="container" style="padding-top: 5%;">
+	<div class="row">
+	    <div class="col" ng-repeat="product in productCatalog">
+			<div class="card" style="width: 20rem;">
+				<img class="card-img-top" ng-src="{{product.product_imageUrl}}" alt="Card image cap"/>
+				<div class="card-block">
+					    <h4 class="card-title">{{product.product_desc}}</h4>
+					    <p class="card-text">Price:₹{{product.product_price}}</p>
+					    <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" ng-click="addItem(product)">Add to cart</a>
+				</div>
+			</div>
+	    </div>	     
+	</div>
+</div>
+<!------------end of ProductCatalog-------------------->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Cart <span>{{product.qty}}</span></h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			</div>
+		    <div class="modal-body">
+			        <table class="show-cart table">
+			        	<thead class="bg-light">
+	                        <tr class="border-0">
+	                            <th class="border-0">#</th>
+	                            <th class="border-0">Image</th>
+	                            <th class="border-0">Product Id</th>
+	                            <th class="border-0">Product Name</th>
+	                            <!-- <th class="border-0">Description</th> -->
+	                            <th class="border-0">Quantity Available</th>
+	                            <th class="border-0">Minnimum Order</th>
+	                            <th class="border-0">Price</th>
+	                            <th class="border-0">Status</th>
+	                            <th class="border-0">Remove Product</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr ng-repeat="product in cart | orderBy:'category'">
+	                            <td>{{$index+1}}</td>
+	                            <td>                                                       
+	                                <img  ng-src="{{product.product_imageUrl}}" alt="user" class="rounded" width="55"/>
+	                                <a href="javascript:void(0)" class="product-pic">
+	                                   
+	                                </a>                                                
+	                            </td>
+	                            <td>{{product.product_id}}</td>
+	                            <td>{{product.product_desc}}</td>
+	                            <td>{{product.product_Quantity_Available}}</td>
+	                            <td>{{product.product_minnimum_order}}</td>
+	                            <td>{{product.product_price}}</td>
+	                            <td><span class="badge-dot badge-brand mr-1"></span>InTransit </td>
+	                            <td><button class="btn-danger btn-xs" ng-click="removeproduct(product);">Remove Item</button></td>
+	                            <td><button class="btn-primary btn-xs" ng-click="getTotal(product)">Add Items</button></td>
+	                        </tr>                                                    
+	                    </tbody>
+			        </table>
+			        <div ng-show="cart.length !== 0">Total price: $<span class="total-cart"></span></div>
+		    </div>
+			<div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="button" href="#/checkout" onclick="alert('I am a popup!');" class="btn btn-primary">Order now</button>
+			</div>
+		</div>
+	</div>
+</div>
+<footer id="fh5co-footer" class="fh5co-bg" role="contentinfo">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row row-pb-md">
+			<div class="col-md-4 fh5co-widget">
+					<h3>A Little About Fruits.</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<p><a class="btn btn-primary" href="#">Become A Member</a></p>
+			</div>
+			<div class="col-md-8">
+					<h3>Fruits</h3>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ul class="fh5co-footer-links">
+							<li><a href="#">Apple</a></li>
+							<li><a href="#">Orange</a></li>
+							<li><a href="#">Banana</a></li>
+							<li><a href="#">Lemon</a></li>
+							<li><a href="#">Fruits</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ul class="fh5co-footer-links">
+							<li><a href="#">Lichi</a></li>
+							<li><a href="#">Pappiya</a></li>
+							<li><a href="#">Cherry</a></li>
+							<li><a href="#">Vegetables</a></li>
+							<li><a href="#">Cabage</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ul class="fh5co-footer-links">
+							<li><a href="#">Apple</a></li>
+							<li><a href="#">Fruits</a></li>
+							<li><a href="#">Cherry</a></li>
+							<li><a href="#">Lichi</a></li>
+							<li><a href="#">Cherry</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<p>
+					<small class="block">&copy; 2018 | All Rights Reserved.</small> 
+					<small class="block">made by kaustav</small>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- <google>
+	client id : 784764109994-dgi4noipfu5tiu64kgj4t8tpl1cof547.apps.googleusercontent.com
+	client Secret : s-v1pw2BfmSslgr5bCMU3yDY
+</google> -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+	
+	function onSignIn(googleUser) {
+	   var profile = googleUser.getBasicProfile();
+	   console.log('profilre',profile);
+	   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	   var name = profile.getName();
+	   console.log('Name: ' + name);
+	   var getImageUrl = profile.getImageUrl();
+	   console.log('getImageUrl',getImageUrl);
+	   //console.log('Image URL: ' + profile.getImageUrl());
+	   var email = profile.getEmail();
+	   console.log('Email: ' + email); // This is null if the 'email' scope is not present.	   
+	} 
+
+</script>
+
+<script>
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '398208384062078',
+      cookie     : true,
+      xfbml      : true,
+      callbackURL: 'http://localhost:9000/auth/facebook/callback',
+      profileURL:  'https://graph.facebook.com/v3.2/me?fields=first_name,last_name,email',
+      version    : 'v3.2'
+    });
+      
+    FB.getLoginStatus(function(response){
+    	statusChangeCallback(response);
+    }) ;  
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+    function statusChangeCallback(response){
+      	if (response.status === 'connected') {
+      		console.log('Logged in and authenticated');
+      	}else{
+      		console.log('Not authenticated');
+      	}
+      }
+      function checkLoginState(){
+      	FB.getLoginStatus(function(response){
+      		statusChangeCallback(response);
+      		console.log(statusChangeCallback(response));
+      	});
+      }
+
+</script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>

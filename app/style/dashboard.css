@@ -6970,9 +6970,8 @@ Media Query
 .simple-card .nav.nav-tabs .nav-item .nav-link {
     padding: 17px 29px;}
 }
-
-
-
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width:320px) {}
+  .card-header-right{
+    left: 50%;
+  }

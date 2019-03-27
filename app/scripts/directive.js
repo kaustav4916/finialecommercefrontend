@@ -1,3 +1,8 @@
+'use strict';
+
+/**************************************
+@name eCommApp.directive
+***************************************/
 
 function sparklinerevenue() {
     //console.log('1111111111111111111111111')
@@ -19,7 +24,7 @@ function sparklinerevenue() {
         highlightLineColor: undefined,
         resize: true
     });
-  
+
     }
   }
 };
@@ -92,6 +97,41 @@ function sparklinerevenue4() {
     }
   }
 };
+function modalHide(){
+    //var clicked = false;
+     return {
+    restrict: 'A',
+        link: function(scope, element,attr) {
+          scope.dismiss = function() {
+            console.log("element :::" , element);
+            setTimeout(function(){
+               element.modal('hide');
+            },1000);
+         };
+        }
+    }
+}
+// function myImgUpload (){
+//     return {
+//         // templateUrl: '/tpl.html',
+//         require: ['^form'],
+//         restrict: 'E',
+//         replace: true,
+//         scope: {
+//             customModel: '=ngModel',
+//             fieldName: '&name'
+//         },
+//         link: function(scope, elem, attr, controllers) {
+//             scope.form = controllers[0];
+//             scope.onFileSelected = function($files, $file, $newFiles, $duplicateFiles, $invalidFiles, $event) {
+//                 console.log('onFileSelected');
+//             }
+//             scope.remove = function(){
+//                 delete scope.customModel;
+//             }
+//         }
+//     };
+// }
 
 
 angular
@@ -99,4 +139,6 @@ angular
     .directive('sparklineRevenue', sparklinerevenue)
     .directive('sparklineRevenue3', sparklinerevenue3)
     .directive('sparklineRevenue4', sparklinerevenue4)
-    .directive('sparklineRevenue2', sparklinerevenue2);
+    .directive('sparklineRevenue2', sparklinerevenue2)
+    // .directive('myImgUpload', myImgUpload)
+    .directive('modalHide', modalHide);
